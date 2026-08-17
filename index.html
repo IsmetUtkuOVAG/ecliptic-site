@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECLIPTIC — Destek · Support</title>
+<style>
+/* Destek sayfası: App Store'un istediği "Support URL". Tek dosya, sıfır
+   bağımlılık; gizlilik.html ile aynı stil, aynı barındırma. */
+:root { --murekkep: #14161d; --soluk: #5b6270; --cizgi: #e3e6ee; --vurgu: #5a49c8; --zemin: #fbfbfd; }
+@media (prefers-color-scheme: dark) {
+  :root { --murekkep: #e8ebf4; --soluk: #9aa1b0; --cizgi: #262a36; --vurgu: #a99df0; --zemin: #0e1018; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--zemin); color: var(--murekkep);
+  font: 16px/1.65 -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+main { max-width: 640px; margin: 0 auto; padding: 48px 24px 72px; }
+h1 { font-size: 26px; letter-spacing: -0.01em; margin: 0 0 4px; }
+.alt { color: var(--soluk); font-size: 13px; margin: 0 0 28px; }
+h2 { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--vurgu); margin: 34px 0 10px; }
+p { margin: 0 0 12px; }
+a { color: var(--vurgu); }
+ul { margin: 0 0 12px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+.dil-ayrac { margin: 56px 0 40px; border: 0; border-top: 1px solid var(--cizgi); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>ECLIPTIC</h1>
+<p class="alt">Gerçek gökyüzünde gezegen birleştirme · <a href="#en">English below</a></p>
+
+<h2>Destek</h2>
+<p>Soru, hata bildirimi ve öneriler için:
+<a href="mailto:ismetutk@gmail.com">ismetutk@gmail.com</a>. Genellikle bir iki
+gün içinde yanıtlıyorum. Yazarken iOS sürümünü ve uygulama sürümünü
+(Ayarlar › Krediler'de) eklersen işi hızlandırır.</p>
+
+<h2>Sık sorulanlar</h2>
+<ul>
+  <li><b>Konum izni ne işe yarıyor?</b> İsteğe bağlıdır. Verirsen gün batımı,
+      ufuk ve gecenin gerçek karanlığı bulunduğun yere göre hesaplanır. Koordinat
+      ~11 km'ye yuvarlanır ve yalnızca cihazında tutulur; iOS Ayarlar › ECLIPTIC ›
+      Konum'dan kapatabilirsin.</li>
+  <li><b>Meteor gecesi ne değişiyor?</b> Yerçekimi, birleşme puanı ve toz kazancı
+      artar; gökten gerçek göktaşları düşer. Tur başındaki rozet o geceyi söyler.</li>
+  <li><b>Günün Turu nedir?</b> Her gün herkese aynı tahta, aynı gökyüzü, güçsüz,
+      tek deneme. Sunucu yok; sonucunu kendin paylaşırsın.</li>
+  <li><b>İlerlemem nerede?</b> Yalnızca cihazında. Uygulamayı silersen silinir;
+      hesap ya da bulut yedeği yoktur.</li>
+  <li><b>Reklam ya da satın alma var mı?</b> Yok. Oyun tamamen çevrimdışı çalışır.</li>
+</ul>
+
+<h2>Gizlilik</h2>
+<p><a href="gizlilik.html">Gizlilik politikası</a> — kısa hâli: hiçbir veri toplanmaz,
+hiçbir veri cihazından çıkmaz.</p>
+
+<hr class="dil-ayrac" id="en">
+
+<h1>ECLIPTIC</h1>
+<p class="alt">Planet merging under a real sky</p>
+
+<h2>Support</h2>
+<p>Questions, bug reports and suggestions:
+<a href="mailto:ismetutk@gmail.com">ismetutk@gmail.com</a>. I usually reply
+within a day or two. Including your iOS version and the app version (Settings ›
+Credits) speeds things up.</p>
+
+<h2>FAQ</h2>
+<ul>
+  <li><b>What is location used for?</b> It's optional. If granted, sunset, your
+      horizon and the night's true darkness are computed for where you are. The
+      coordinate is rounded to ~11 km and kept only on your device; turn it off in
+      iOS Settings › ECLIPTIC › Location.</li>
+  <li><b>What changes on a meteor night?</b> Gravity, merge score and dust rise;
+      real meteors fall onto the board. The badge at the start of the run tells you.</li>
+  <li><b>What is the Daily Run?</b> Same board, same sky for everyone, no powers,
+      one try. No server — you share the result yourself.</li>
+  <li><b>Where is my progress?</b> Only on your device. Deleting the app deletes it;
+      there is no account or cloud backup.</li>
+  <li><b>Ads or purchases?</b> None. The game works fully offline.</li>
+</ul>
+
+<h2>Privacy</h2>
+<p><a href="gizlilik.html#en">Privacy policy</a> — in short: nothing is collected,
+nothing leaves your device.</p>
+
+</main>
+</body>
+</html>
