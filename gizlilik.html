@@ -63,25 +63,74 @@ li { margin-bottom: 6px; }
 
 <!-- ============================== TÜRKÇE ============================== -->
 <h1>ECLIPTIC — Gizlilik Politikası</h1>
-<p class="tarih">Yürürlük tarihi: 16 Ağustos 2026 · Güncelleme: 7 Ekim 2026 (yeni "iCloud yedeği" bölümü: ilerlemenizin bir kısmı kendi iCloud hesabınızda yedeklenir, Ayarlar'dan kapatılabilir; özet, "Ağ erişimi", Game Center, "Cihazınızda saklanan veriler" ve GDPR bölümleri buna göre düzeltildi; Game Center bölümü ayrıca rekorun oyun öne gelince de yeniden gönderildiğini söylüyor) · Önceki güncellemeler: 5 Ekim 2026 (sensör cümlesi İngilizcesiyle aynı yapıldı; "Cihazınızda saklanan veriler" bölümü Game Center'ı da anıyor; oyun hâlâ hiçbir veri toplamaz) · 3 Ekim 2026 ("Cihazınızda saklanan veriler" bölümüne hata günlüğü, "Bildirimler" bölümüne Günün Turu hatırlatması ve bildirim sorusunun cevabı eklendi; yeni "Sonuç paylaşımı" bölümü; oyun hâlâ hiçbir veri toplamaz) · 24 Eylül 2026 ("Game Center sıralaması (isteğe bağlı)" bölümüne bir cümle eklendi — bağlıyken Sonsuz Mod rekorunuz tabloda eksik görünürse uygulama açılışında yeniden gönderilir) · 6 Eylül 2026 ("Game Center sıralaması (isteğe bağlı)" bölümü eklendi — yalnızca siz açarsanız skorlarınız Apple'a gider; ayrıca AB dağıtımı için "Veri sorumlusu ve Avrupa Birliği kullanıcıları (GDPR)" bölümü) · <a href="#en">English below</a></p>
+<p class="tarih">Yürürlük tarihi: 16 Ağustos 2026 · Güncelleme: 8 Kasım 2026 (yeni "Oyun verisi ölçümü" bölümü: oyunu dengelemek için oynadığınız turların kimliksiz özeti, onayınızla, Apple'ın CloudKit hizmetinde toplanır; Ayarlar'dan kapatılır ve silinir. Özet, "Ağ erişimi", "Cihazınızda saklanan veriler", "Çocukların gizliliği" ve GDPR bölümleri buna göre düzeltildi) · Önceki güncelleme: 7 Ekim 2026 (iCloud yedeği) · <a href="#en">English below</a></p>
 
-<p class="ozet">ECLIPTIC hiçbir kişisel veri toplamaz. Sunucumuz yok, hesap
-sistemi yok, analitik yok, reklam yok, üçüncü taraf SDK'sı yok. Siz
-paylaşmadıkça oyun verisi cihazınızın dışına yalnız iki yoldan çıkar: ilerlemenizin kendi iCloud
-hesabınızdaki yedeği ve yalnızca siz açarsanız çalışan Game Center
-sıralaması (ikisi de aşağıda). İkisini de Apple kendi hizmeti olarak
-yürütür; iCloud yedeğinizi biz göremeyiz.</p>
+<p class="ozet">ECLIPTIC, oyunu dengelemek için oynadığınız turların kimliksiz
+özetini Apple'ın iCloud altyapısında (CloudKit) duran oyun veritabanında toplar.
+Adınızı, hesabınızı, konumunuzu ve reklam kimliğinizi toplamaz, sizi izlemez.
+Ölçüm başlamadan önce bunu oyunda size sorarız; Ayarlar'dan istediğiniz an kapatabilir,
+gönderdiklerinizi silebilirsiniz. Sunucumuz yok, hesap sistemi yok, reklam yok,
+üçüncü taraf SDK'sı yok. Bunun dışında oyun verisi cihazınızın dışına iki yoldan
+çıkar: ilerlemenizin kendi iCloud hesabınızdaki yedeği ve yalnızca siz açarsanız
+çalışan Game Center sıralaması (ikisi de aşağıda).</p>
 
 <h2>Ağ erişimi</h2>
-<p>ECLIPTIC, çalışırken herhangi bir dış sunucuya istek göndermez. Oyunun tüm
-içeriği (görseller, sesler, gökyüzü hesapları) uygulamanın içinde üretilir;
-ay evresi, gezegen konumları ve meteor takvimi cihazınızın tarih ve saatinden
-matematiksel olarak hesaplanır, internetten alınmaz. İndirme ve güncellemeler
-yalnızca Apple App Store altyapısı üzerinden gerçekleşir. Game Center
-sıralamasını açtıysanız skorlarınız Apple'ın Game Center sunucularına gider.
-iCloud yedeği açıksa ilerlemenizin kopyasını iOS, Apple'ın iCloud sunucularıyla
-eşitler; bu oyunun değil, Apple'ın kendi kanalıdır. Bunların dışında ağ isteği
-yoktur.</p>
+<p>Oyunun tüm içeriği (görseller, sesler, gökyüzü hesapları) uygulamanın içinde
+üretilir; ay evresi, gezegen konumları ve meteor takvimi cihazınızın tarih ve
+saatinden hesaplanır, internetten alınmaz. İndirme ve güncellemeler yalnızca
+Apple App Store altyapısı üzerinden gerçekleşir. Oyunun kendisinin yaptığı tek
+ağ isteği oyun verisi ölçümüdür: açıksa tur özetleri Apple'ın CloudKit
+hizmetine gider (aşağıda). Game Center sıralamasını açtıysanız skorlarınız
+Apple'ın Game Center sunucularına gider. iCloud yedeği açıksa ilerlemenizin
+kopyasını iOS, Apple'ın iCloud sunucularıyla eşitler. Bunların dışında ağ
+isteği yoktur.</p>
+
+<h2>Oyun verisi ölçümü (Apple CloudKit)</h2>
+<p><strong>Ne toplanır.</strong> Bitirdiğiniz ya da yarıda bıraktığınız her tur
+için: puan, bırakma sayısı, tur süresi, birleşmeler ve hangi kademelerin
+yapıldığı, Güneş anları, kullanılan güçler, turun nasıl bittiği, oyun kipi,
+o gecenin gök olayı; turun yeniden oynatılabilmesi için turun tohumu ve taşları
+bıraktığınız yer ve an. Turda kazandığınız ve harcadığınız Yıldız Tozu ve
+nereden geldiği. Oyunun ne kadar akıcı çalıştığı: kare süreleri (ortanca, en
+yavaş kareler), telefonun ısınma durumu ve Düşük Güç Modu'nun açık olup
+olmadığı. Her uygulama açılışında: hangi ekranda ne kadar kalındığı, kaç tur
+oynandığı, tur dışında kazanılan ve harcanan Yıldız Tozu, oyun içi ayarlar
+(ses, müzik, titreşim, Hareketi Azalt gibi; açık mı kapalı mı). Ayrıca oyun
+sürümü, dil, telefon modeli (ör. "iPhone15,2"), iOS sürümü ve cihazın bölge
+ayarı (ör. "TR"; konum değil). Serbest metin toplanmaz.</p>
+<p><strong>Ne toplanmaz.</strong> Adınız, e-postanız, Game Center kimliğiniz,
+konumunuz, cihaz adınız, reklam kimliğiniz, pil yüzdeniz. Oyun bu verileri
+üçüncü taraf verileriyle birleştirmez, reklam için kullanmaz, kimseye satmaz.</p>
+<p><strong>Kimlik.</strong> Kayıtlar, uygulama ilk kez ölçüm yaptığında
+cihazınızda üretilen rastgele bir "kurulum numarası" taşır; bu numara yalnız bu
+uygulamada vardır ve sizi tanımlamaz. Ölçümü kapattığınızda numara cihazdan
+silinir; yeniden açarsanız yeni numara üretilir. Apple, CloudKit'e yazılan her
+kayda kendi hizmeti için uygulamaya özel bir takma kimlik ekler; biz bu kimliği
+analizde kullanmayız, yalnız "Gönderdiklerimi sil" isteğinizi yerine getirmek
+için kullanırız.</p>
+<p><strong>Neden.</strong> Oyunun zorluğunu, ödüllerini ve yeni bölümlerini
+gerçek oyunculara göre ayarlamak için (örneğin oyuncuların kaçta kaçının Güneş'e
+ulaştığı). Veriler analiz ve oyunun geliştirilmesi dışında kullanılmaz.</p>
+<p><strong>Nerede durur.</strong> Apple'ın CloudKit hizmetinde, oyuna ait genel
+veritabanında (iCloud.com.utkuovag.ecliptic). Bizim kendi sunucumuz yoktur;
+verileri Apple'ın altyapısından indirip cihazımızda inceleriz.</p>
+<p><strong>Kimler okuyabilir.</strong> Veritabanının okuma izni Apple'ın ayarında şu
+an kısıtlanmamıştır ("genel okuma"). ECLIPTIC başka oyuncuların kayıtlarını
+okumaz ve göstermez; biz verileri yayımlamayız, kimseyle paylaşmayız ve
+satmayız. Kayıtlar adınızı, e-postanızı, hesabınızı ya da konumunuzu taşımadığı
+için bir kaydın kime ait olduğu kayıttan anlaşılamaz. Okuma iznini yalnız bize
+açık bir role daraltmayı planlıyoruz; o zaman bu politika güncellenir.</p>
+<p><strong>Ne kadar saklanır.</strong> En çok 24 ay; sonra silinir.</p>
+<p><strong>Onay ve kapatma.</strong> Ölçüm, oyunda bir kez gösterilen kartta
+"Tamam" demeden başlamaz; kartta "Kapat" derseniz hiç başlamaz. Sonradan
+Ayarlar › "Oyunun dengelenmesine yardım et" anahtarıyla istediğiniz an
+kapatabilirsiniz; kapatınca bekleyen kayıtlar ve kurulum numarası cihazdan
+silinir. Ölçüm, oyunun hiçbir özelliğini açmak ya da satın almak için şart
+değildir.</p>
+<p><strong>Silme.</strong> Ayarlar › "Gönderdiklerimi sil" düğmesi, bu kurulumun
+ve aynı iCloud hesabının gönderdiği bütün kayıtları Apple'ın veritabanından
+siler. iCloud'a girmemiş bir cihaz kayıt gönderemez; kayıtlar giriş yapılana
+kadar cihazda bekler.</p>
 
 <h2>Game Center sıralaması (isteğe bağlı)</h2>
 <p>"Sıralama" ekranı Apple'ın Game Center hizmetiyle çalışır ve yalnızca siz
@@ -180,7 +229,8 @@ da durur (liste "iCloud yedeği" bölümünde). Game Center sıralamasını
 açtıysanız Sonsuz Mod ve Günün Turu skorlarınız Apple'ın Game Center
 sunucularına da gider (yukarıda). Bu verilere bizim erişimimiz yoktur.
 Uygulamayı sildiğinizde cihazdaki veriler silinir; iCloud'daki kopya Apple
-hesabınızda kalır ve oyunu yeniden kurduğunuzda geri gelir.</p>
+hesabınızda kalır ve oyunu yeniden kurduğunuzda geri gelir. Ölçüm açıksa,
+gönderilmeyi bekleyen tur özetleri de gönderilene kadar cihazda tutulur.</p>
 
 <p>Oyun çalışırken bir hata olursa, hatanın kısa teknik özeti (zaman, oyun
 sürümü, hata mesajı ve hatanın oyun kodundaki yeri) de yalnızca cihazınızda
@@ -217,7 +267,8 @@ hiçbir sunucuya bir şey göndermez. iOS ya da seçtiğiniz uygulama bağlantı
 önizlemesini kendisi yükleyebilir; bu isteği oyun yapmaz.</p>
 
 <h2>Çocukların gizliliği</h2>
-<p>ECLIPTIC hiç kimseden veri toplamadığı için çocuklardan da veri toplamaz.</p>
+<p>Oyun verisi ölçümü yaşa göre ayrılmaz ve kimliksizdir; ad, yaş ya da
+iletişim bilgisi toplanmaz.</p>
 
 <h2>Gelecekteki değişiklikler</h2>
 <p>İleride oyuna reklam veya uygulama içi satın alma gibi, veri işleme
@@ -225,29 +276,26 @@ gerektirebilecek özellikler eklenirse, bu politika söz konusu özellikler
 yayınlanmadan <em>önce</em> güncellenir ve değişiklik bu sayfada duyurulur.</p>
 
 <h2>Veri sorumlusu ve Avrupa Birliği kullanıcıları (GDPR)</h2>
-<p>ECLIPTIC'i geliştiren ve — veri işlenseydi — veri sorumlusu sayılacak
-kişi Utku Ovağ'dır; iletişim adresi aşağıdaki e-postadır. Uygulama hiçbir
-kişisel veriyi toplamadığı ve işlemediği için (iki istisna var: isteğe bağlı
-Game Center sıralaması ve kendi iCloud hesabınızdaki yedek; ikisinde de
-veriyi Apple kendi hizmeti için işler — bkz. ilgili bölümler):</p>
+<p>ECLIPTIC'i geliştiren ve oyun verisi ölçümünün veri sorumlusu Utku Ovağ'dır;
+iletişim adresi aşağıdaki e-postadır.</p>
 <ul>
-  <li>Bizim yürüttüğümüz bir işleme faaliyeti olmadığından hukuki dayanak
-      (GDPR md. 6) gerekmez. Bizim yaptığımız bir yurt dışı veri aktarımı da
-      yoktur. Game Center'ı ya da iCloud yedeğini kullanıyorsanız veri
-      Apple'ın sunucularına gider ve Apple'ın gizlilik politikasına tabidir;
-      başka aktarım yoktur.</li>
-  <li>Erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz
-      haklarınızın (GDPR md. 15–21) konusu olabilecek, bizde tutulan
-      hiçbir veriniz yoktur. Cihazınızdaki kayıtlar yalnızca sizdedir ve
-      uygulamayı sildiğinizde birlikte silinir. iCloud'daki kopya da sizin
-      Apple hesabınızdadır; Ayarlar › "iCloud ile eşitle" anahtarını
-      kapattığınızda oyun bu kopyayı siler. Uygulamayı sildiyseniz kopyayı
-      silmek için oyunu yeniden kurup bu anahtarı kapatabilirsiniz.</li>
-  <li>Otomatik karar verme ya da profilleme yapılmaz; çocuklara yönelik
-      ayrı bir veri işleme de yoktur.</li>
-  <li>Yine de bir şikâyetiniz olursa, yaşadığınız AB ülkesinin veri koruma
-      denetim makamına başvurma hakkınız saklıdır.</li>
+  <li>İşlenen tek veri yukarıdaki "Oyun verisi ölçümü"dür. Hukuki dayanak
+      onayınızdır (GDPR md. 6/1-a); onayı Ayarlar'dan istediğiniz an geri
+      çekebilirsiniz.</li>
+  <li>Veri Apple'ın CloudKit hizmetinde durur; Apple veriyi bizim adımıza
+      işler. Game Center ve iCloud yedeğinde ise Apple veriyi kendi hizmeti
+      için işler (ilgili bölümler).</li>
+  <li>Silme hakkınızı Ayarlar › "Gönderdiklerimi sil" ile kendiniz
+      kullanabilirsiniz. Kayıtlar adınızı taşımadığı için e-postayla gelen bir
+      isteği hangi kayıtların size ait olduğunu bilmeden yerine getiremeyiz;
+      düğme bu yüzden vardır. Erişim ve taşınabilirlik istekleri için
+      aşağıdaki adrese yazın.</li>
+  <li>Otomatik karar verme ya da profilleme yapılmaz; veri kişiye özel karar
+      için kullanılmaz.</li>
+  <li>Şikâyetiniz olursa yaşadığınız AB ülkesinin veri koruma denetim
+      makamına başvurma hakkınız saklıdır.</li>
 </ul>
+
 <!-- Tacir bilgileri App Store Connect'e girilenle BİREBİR aynı olmalı —
      Apple doğruluyor, sayfa ile mağaza sayfası çelişmemeli. Aynı blok
      destek sayfasında (index.html) da var, dördü birlikte güncellenir
@@ -269,25 +317,77 @@ diğer mevzuat kapsamındaki talepleriniz ile her türlü soru için:
 
 <!-- ============================== ENGLISH ============================== -->
 <h1>ECLIPTIC — Privacy Policy</h1>
-<p class="tarih">Effective date: 16 August 2026 · Updated 7 October 2026 (new "iCloud backup" section: part of your progress is backed up in your own iCloud account and can be turned off in Settings; the summary, "Network access", Game Center, "Data stored on your device" and GDPR sections were adjusted accordingly; the Game Center section now also says the record is resent when the game returns to the foreground) · Previous updates 5 October 2026 (the Turkish sensor sentence now matches the English; "Data stored on your device" also mentions Game Center; the game still collects no data) · 3 October 2026 (the on-device error log was added to "Data stored on your device", the Daily Run reminder and the answer to the notification question to "Notifications"; new "Sharing results" section; the game still collects no data) · 24 September 2026 (one sentence was added to "Game Center leaderboard (optional)" — while connected, if your Endless Mode record is missing from the leaderboard, it is sent again when the app opens) · 6 September 2026 (a "Game Center leaderboard (optional)" section was added — your scores go to Apple only if you connect; also a "Data controller and users in the European Union (GDPR)" section for EU distribution)</p>
+<p class="tarih">Effective date: 16 August 2026 · Updated 8 November 2026 (new "Game data measurement" section: with your consent, an anonymous summary of the rounds you play is collected in Apple's CloudKit service to balance the game; you can turn it off and delete it in Settings. The summary, "Network access", "Data stored on your device", "Children's privacy" and GDPR sections were adjusted accordingly) · Previous update: 7 October 2026 (iCloud backup)</p>
 
-<p class="ozet">ECLIPTIC collects no personal data. There is no server, no
-account system, no analytics, no advertising, and no third-party SDK. Unless
-you share it yourself, game data leaves your device in only two ways: a backup of your progress in your own
-iCloud account, and the Game Center leaderboard, which runs only if you turn it
-on (both below). Apple runs both as its own services; we cannot see your iCloud
-backup.</p>
+<p class="ozet">To balance the game, ECLIPTIC collects an anonymous summary of
+the rounds you play in the game's database on Apple's iCloud infrastructure
+(CloudKit). It does not collect your name, account, location or advertising
+identifier, and it does not track you. We ask you in the game before measurement
+starts; you can turn it off in Settings at any time and delete what you sent.
+There is no server, no account system, no advertising and no third-party SDK.
+Apart from this, game data leaves your device in only two ways: a backup of your
+progress in your own iCloud account, and the Game Center leaderboard, which runs
+only if you turn it on (both below).</p>
 
 <h2>Network access</h2>
-<p>ECLIPTIC makes no requests to any external server while running. Everything in
-the game — graphics, sound, sky calculations — is generated inside the app;
-moon phases, planet positions and the meteor calendar are computed
-mathematically from your device's date and time, not fetched from the
-internet. Downloads and updates happen only through the Apple App Store. If you
-have turned on the Game Center leaderboard, your scores go to Apple's Game
-Center servers. If the iCloud backup is on, iOS syncs a copy of your progress
-with Apple's iCloud servers; this is Apple's own channel, not a request made by
-the game. There is no other network request.</p>
+<p>Everything in the game — graphics, sound, sky calculations — is generated
+inside the app; moon phases, planet positions and the meteor calendar are
+computed from your device's date and time, not fetched from the internet.
+Downloads and updates happen only through the Apple App Store. The only network
+request the game itself makes is game data measurement: if it is on, round
+summaries go to Apple's CloudKit service (below). If you have turned on the
+Game Center leaderboard, your scores go to Apple's Game Center servers. If the
+iCloud backup is on, iOS syncs a copy of your progress with Apple's iCloud
+servers. There is no other network request.</p>
+
+<h2>Game data measurement (Apple CloudKit)</h2>
+<p><strong>What is collected.</strong> For each round you finish or leave:
+score, number of drops, round length, merges and which tiers were made, Sun
+moments, powers used, how the round ended, game mode, that night's sky event;
+and, so the round can be replayed, the round's seed and where and when you
+dropped each piece. The Stardust you earn and spend in the round and where it
+came from. How smoothly the game runs: frame times (median, slowest frames), the
+phone's heat state and whether Low Power Mode is on. For each app session: which
+screens were open and for how long, how many rounds were played, Stardust earned
+and spent outside rounds, and your in-game settings (such as sound, music,
+haptics, Reduce Motion; on or off). Also the game version, language, phone model
+(e.g. "iPhone15,2"), iOS version and the device's region setting (e.g. "TR"; not
+your location). No free text is collected.</p>
+<p><strong>What is not collected.</strong> Your name, e-mail, Game Center ID,
+location, device name, advertising identifier or battery level. The game does
+not combine this data with third-party data, does not use it for advertising and
+does not sell it.</p>
+<p><strong>Identity.</strong> Records carry a random "installation number"
+created on your device the first time measurement runs; it exists only in this
+app and does not identify you. Turning measurement off deletes the number from
+the device; turning it back on creates a new one. Apple adds an app-specific
+pseudonymous identifier to every CloudKit record for its own service; we do not
+use it for analysis, only to carry out your "Delete what I sent" request.</p>
+<p><strong>Why.</strong> To tune the game's difficulty, rewards and new levels to
+real players (for example, how many players reach the Sun). The data is used only
+for analysis and improving the game.</p>
+<p><strong>Where it is stored.</strong> In the game's public database in Apple's
+CloudKit service (iCloud.com.utkuovag.ecliptic). We have no server of our own; we
+download the data from Apple's infrastructure and review it on our own
+computer.</p>
+<p><strong>Who can read it.</strong> The database's read permission is currently
+not restricted in Apple's settings ("public read"). ECLIPTIC does not read or
+show other players' records; we do not publish, share or sell the data. Because
+records carry no name, e-mail, account or location, a record cannot be traced to
+a person from its contents. We plan to narrow read access to a role open only to
+us; this policy will be updated then.</p>
+<p><strong>How long it is kept.</strong> At most 24 months; then it is
+deleted.</p>
+<p><strong>Consent and turning it off.</strong> Measurement does not start until
+you tap "OK" on the card shown once in the game; if you tap "Turn off",
+it never starts. You can later turn it off at any time in Settings › "Help balance
+the game"; turning it off deletes waiting records and the installation number
+from the device. Measurement is not required to unlock or buy anything in the
+game.</p>
+<p><strong>Deletion.</strong> Settings › "Delete what I sent" deletes every record
+sent by this installation and the same iCloud account from Apple's database. A
+device that is not signed in to iCloud cannot send records; they wait on the
+device until you sign in.</p>
 
 <h2>Game Center leaderboard (optional)</h2>
 <p>The "Leaderboard" screen runs on Apple's Game Center and is active only
@@ -422,8 +522,8 @@ sends nothing to any server while you share. iOS or the app you choose may load
 a preview of the link on its own; the game does not make this request.</p>
 
 <h2>Children's privacy</h2>
-<p>Since ECLIPTIC collects no data from anyone, it collects no data from
-children.</p>
+<p>Game data measurement does not depend on age and is anonymous; no name, age or
+contact information is collected.</p>
 
 <h2>Future changes</h2>
 <p>If features that may involve data processing — such as advertising or
@@ -431,27 +531,23 @@ in-app purchases — are ever added, this policy will be updated <em>before</em>
 those features ship, and the change will be announced on this page.</p>
 
 <h2>Data controller and users in the European Union (GDPR)</h2>
-<p>ECLIPTIC is developed by Utku Ovağ, who would be the data controller if
-any data were processed; the contact address is the e-mail below. Because the
-app collects no personal data and processes none (with two exceptions: the
-optional Game Center leaderboard and the backup in your own iCloud account; in
-both, Apple processes the data for its own service — see those sections):</p>
+<p>ECLIPTIC is developed by Utku Ovağ, the data controller for game data
+measurement; the contact address is the e-mail below.</p>
 <ul>
-  <li>There is no processing activity on our side, so no legal basis (GDPR
-      Art. 6) is required. We transfer no data to any other country. If you
-      use Game Center or the iCloud backup, the data goes to Apple's servers
-      under Apple's privacy policy; nothing else is transferred.</li>
-  <li>We hold nothing that your rights of access, rectification, erasure,
-      restriction, portability or objection (GDPR Arts. 15–21) could apply
-      to. What the app stores on your device stays there and is deleted with
-      the app. The copy in iCloud is also in your own Apple account; turning
-      off Settings › "Sync with iCloud" makes the game delete it. If you have
-      deleted the app, you can reinstall it and turn this switch off to delete
-      the copy.</li>
-  <li>There is no automated decision-making or profiling, and no separate
-      processing of children's data.</li>
-  <li>Should you still wish to complain, you may lodge a complaint with the
-      data protection supervisory authority of your EU member state.</li>
+  <li>The only data processed is the "Game data measurement" above. The legal
+      basis is your consent (GDPR Art. 6(1)(a)); you can withdraw it at any
+      time in Settings.</li>
+  <li>The data is stored in Apple's CloudKit service; Apple processes it on our
+      behalf. For Game Center and the iCloud backup, Apple processes data for
+      its own service (see those sections).</li>
+  <li>You can exercise your right to erasure yourself with Settings › "Delete
+      what I sent". Because records carry no name, we cannot tell which records
+      are yours from an e-mail request; that is why the button exists. For
+      access and portability requests, write to the address below.</li>
+  <li>There is no automated decision-making or profiling; the data is not used
+      for decisions about individuals.</li>
+  <li>Should you wish to complain, you may lodge a complaint with the data
+      protection supervisory authority of your EU member state.</li>
 </ul>
 
 <h2>Trader information (DSA)</h2>
